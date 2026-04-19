@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    
+    <div class="form-container">
+    <h1>Formulario</h1>
+    <form action="/procesar" method="POST" class="form">
+        <label for="">Nombre completo:</label><br>
+        <input type="text" name="nombre" required>
+        <br><br>
+
+        <label for="">Edad:</label><br>
+        <input type="number" name="edad" required>
+        <br><br>
+
+        <label for="">Correo</label><br>
+        <input type="email" name="correo" required>
+        <br><br>
+
+        <label for="">Mensaje</label>
+        <textarea name="mensaje" id="" rows="5" required placeholder="Escribe tu mensaje..."></textarea>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+    </div>
+</body>
+</html>

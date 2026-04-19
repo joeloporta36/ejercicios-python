@@ -1,0 +1,1 @@
+#pide al usuario 5 numeros y guardarlos en una lista, luego mostrar la lista completa#
